@@ -25,7 +25,7 @@ function App() {
     if (type === "reset") {
       setFeedback({ good: 0, neutral: 0, bad: 0 });
     } else {
-      setFeedback({ ...feedback, [type]: ++feedback[type] });
+      setFeedback({ ...feedback, [type]: feedback[type] + 1 });
     }
   };
 
